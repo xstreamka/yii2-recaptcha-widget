@@ -1,0 +1,29 @@
+{
+    "name": "xstreamka/yii2-recaptcha-widget",
+    "description": "Spam check widget for Yii2, based on Google reCAPTCHA API v3",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "captcha", "recaptcha", "google", "widget"],
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/xstreamka/yii2-recaptcha-widget",
+        "issues": "https://github.com/xstreamka/yii2-recaptcha-widget/issues"
+    },
+    "authors": [
+        {
+            "name": "XStream",
+            "email": "xstreamka@gmail.com",
+            "homepage": "https://github.com/xstreamka/yii2-recaptcha-widget",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "yiisoft/yii2-httpclient": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "xstreamka\\recaptcha\\": "src"
+        }
+    }
+}
