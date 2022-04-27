@@ -54,7 +54,7 @@ class ReCaptcha extends Widget
 // Каждой форме запрашиваем токен.
 $('form').each(function (){
     let form = $(this);
-    if ($('input[name={$name}]', form).val() === '') {
+    if ($('input[name={$name}]', form).val() === '' && (typeof grecaptcha !== 'undefined')) {
 		grecaptcha.ready(function() {
     		grecaptcha.execute('{$siteKeyV3}', {action: 'submit'}).then(function(token) {
     			$('input[name={$name}]', form).val(token);
